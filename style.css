@@ -2,19 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins;
 }
 
+/* navbar */
+
 nav{
-    background-color: #FEFFFF;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+    padding: 12px 42px;
+    color: #3D4650;
+}
+
+.logo{
+    font: 600 24px Parisienne;
+    line-height: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
+    gap: 20px;
+    font-size: 14px;
 }
 
-.menu{
-    display: flex;
+.store-icon{
+    font-size: 16px;
 }
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+.list-icon{
+    display: none;
+    font-size: 20px;
+}
+
+@media (max-width:480px) {
+    .list-icon{
+        display: block;
+    }
+
+    .store-icon{
+        font-size: 20px;
+    }
+    
+    nav ul li{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width:768px) {
+    .list-icon{
+        display: block;
+    }
+
+    .store-icon{
+        font-size: 20px;
+    }
+    
+    nav ul li{
+        display: none;
+    }
+}
+
+/* header */
+
+.hero-img{
+    background-image: linear-gradient(rgb(255, 255, 255, 0.3)),  url("hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font: 800 62px Merienda;
+    color: #3D4650;
+}
+
+.hero-img p{
+    margin: 0 0 32px 0;
+    font: bold 16px Quattrocento;
+    color: #3D4650;
+}
+
+.hero-img button{
+    color: white;
+    background-color: rgb(255, 255, 255, 0);
+    border: 2px solid #AD5A2D;
+    padding: 8px 24px;
+}
+
+.hero-img button:hover{
+    background-color: #AD5A2D;
+}
+
+@media (max-width: 480px){
+    .hero-img{
+        height: 40vh;
+    }
+
+    .hero-img h1{
+         font-size: 42px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .hero-img{
+        height: 50vh;
+    }
+
+    .hero-img h1{
+         font-size: 42px;
+    }
+}
+
+
+
