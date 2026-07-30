@@ -48,34 +48,6 @@ nav ul li:hover{
     font-size: 20px;
 }
 
-@media (max-width:480px) {
-    .list-icon{
-        display: block;
-    }
-
-    .store-icon{
-        font-size: 20px;
-    }
-    
-    nav ul li{
-        display: none;
-    }
-}
-
-@media (min-width: 481px) and (max-width:768px) {
-    .list-icon{
-        display: block;
-    }
-
-    .store-icon{
-        font-size: 20px;
-    }
-    
-    nav ul li{
-        display: none;
-    }
-}
-
 /* header */
 
 .hero-img{
@@ -112,6 +84,18 @@ nav ul li:hover{
 }
 
 @media (max-width: 480px){
+     .list-icon{
+        display: block;
+    }
+
+    .store-icon{
+        font-size: 20px;
+    }
+    
+    nav ul li{
+        display: none;
+    }
+
     .hero-img{
         height: 40vh;
     }
@@ -122,6 +106,18 @@ nav ul li:hover{
 }
 
 @media (min-width: 481px) and (max-width: 768px){
+    .list-icon{
+        display: block;
+    }
+
+    .store-icon{
+        font-size: 20px;
+    }
+    
+    nav ul li{
+        display: none;
+    }
+
     .hero-img{
         height: 50vh;
     }
