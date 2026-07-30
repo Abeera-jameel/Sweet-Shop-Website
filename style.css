@@ -83,8 +83,62 @@ nav ul li:hover{
     background-color: #AD5A2D;
 }
 
+/* assortment */
+
+.assortment{
+    text-align: center;
+}
+
+.assortment h2{
+    font: 500 54px italianno;
+    margin: 44px 0 0 0;
+    color:#3D4650;
+}
+
+.items{
+    margin: 44px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item1{
+    width: 220px;
+    height: 320px;
+}
+
+.item-img{
+    background-position: center;
+    background-size: cover;
+    width: 220px;
+    height: 320px;
+}
+
+.item1-img{
+      background-image: url("cakes.jpg");
+}
+
+.item2-img{
+      background-image: url("baking.jpg");
+}
+
+.item3-img{
+      background-image: url("wedding cake.jpg");
+}
+
+.item4-img{
+      background-image: url("cup cake.jpg");
+}
+
+.item-name{
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    background-color:rgb(252, 247, 241);
+}
+
 @media (max-width: 480px){
-     .list-icon{
+    .list-icon{
         display: block;
     }
 
@@ -103,9 +157,29 @@ nav ul li:hover{
     .hero-img h1{
          font-size: 42px;
     }
+
+    .items{
+        flex-flow: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .item1{
+        width: 90vw;
+        height: 350px;
+    }
+
+    .item-img{
+        width: 90vw;
+        height: 350px;
+    }
+
+    .assortment h2{
+        font-size: 36px;
+    }
 }
 
-@media (min-width: 481px) and (max-width: 768px){
+@media (min-width: 481px) and (max-width: 768px) {
     .list-icon{
         display: block;
     }
@@ -125,7 +199,17 @@ nav ul li:hover{
     .hero-img h1{
          font-size: 42px;
     }
+
+    .items{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-template-rows: 50% 50%;
+        place-items: center;
+        column-gap: 16vw;
+        row-gap: 8vw;
+    }
+
+    .item1, .item-img{
+        width: 40vw;
+    }
 }
-
-
-
