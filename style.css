@@ -258,6 +258,7 @@ nav ul li:hover{
 
 .contact-text{
     background-color: #AD5A2D;
+    color:white;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -495,6 +496,35 @@ iframe{
     .contact-text p{
         font-size: 12px;
     }
+}
+
+.footer{
+    background-color:#AD5A2D; 
+    color: white;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 30px;
+    padding: 60px ;
+}
+
+.footer-logo{
+    font: 600 24px Parisienne;
+    line-height: 20px;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+.address-email p{
+    margin-bottom: 10px;
+}
+
+.social-media-icons{
+    margin: 10px;
 }
 
 
