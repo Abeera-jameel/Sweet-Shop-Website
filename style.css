@@ -213,7 +213,76 @@ nav ul li:hover{
     height: 40vh;
 }
 
+/* contact section */
 
+.contact-detail{
+    display: flex;
+}
+
+.contact h2{
+    padding: 44px 0 44px 0;
+    font: 500 56px italianno;
+    color:#3D4650;
+    text-align: center;
+}
+
+.contact-images-map{
+    margin: 0 20px 0 120px;
+}
+
+.contact-images{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin:  0 0 24px 0;
+}
+
+.contact-img{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.contact-img1{
+    background-image: url("contact-img1.jpg");
+}
+
+.contact-img2{
+    background-image: url("contact-img2.jpg");
+}
+
+.contact-img3{
+    background-image: url("contact-img3.jpg");
+}
+
+.contact-text{
+    background-color: #AD5A2D;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 300px;
+    height: 475px;
+    padding: 60px ;
+}
+
+.contact-text h5{
+    font: 800 18px Quattrocento; 
+}
+
+.contact-no{
+    margin: 24px 0 24px 0;
+}
+
+.contact-text p{
+    margin: 4px 0 0 0;
+    font-size: 14px;
+}
+
+iframe{
+    width: 650px;
+    height: 254px;
+}
 
 @media (max-width: 480px) {
     .list-icon{
@@ -271,7 +340,7 @@ nav ul li:hover{
     .about-images{
         width: 100%;
         padding: 0;
-        row-gap: 16px;
+        row-gap: 14px;
         justify-content: center;
     }
 
@@ -281,10 +350,54 @@ nav ul li:hover{
     }
 
     .about-img3{
-        height: 46vh;
+        height: 46.2vh;
     }
 
-    
+    .contact-detail{
+        display: block;
+    }
+
+    .contact-images{
+        gap: 14px;
+        margin-bottom: 14px;
+    }
+
+    .contact-img{
+        height: 20vw;
+    }
+
+    .contact-images-map{
+        margin: 0 20px 0 20px;
+    }
+
+    .iframe{
+        display: flex;
+        justify-content: center;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .con-text{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .contact-text{
+        margin: 30px 0 0 0;
+        width: 90vw;
+        height: 350px;
+    }
+
+    .contact-text h5{
+        font-size: 16px;
+    }
+
+    .contact-text p{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -343,7 +456,44 @@ nav ul li:hover{
     }
 
     .about-img3{
-        height: 57.3vh;
+        height: 58.2vh;
+    }
+
+    .contact-detail{
+        display: block;
+    }
+
+    .iframe{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    iframe{
+        width: 95vw;
+        height: 30vh;
+    }
+
+    .contact-images-map{
+        margin: 0 20px 0 20px;
+    }
+
+    .con-text{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .contact-text{
+        width: 90vw;
+        height: 270px;
+    }
+
+    .contact-text h5{
+        font-size: 16px;
+    }
+
+    .contact-text p{
+        font-size: 12px;
     }
 }
 
